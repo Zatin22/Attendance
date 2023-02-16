@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  flex: 1;
+}
+.main-container {
+  display: flex;
+  /* position: relative; */
+}
+main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #2a3042;
+  color: white;
+  height: 120vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* overflow-y: auto;  */
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  height: 80px;
+}
+.logo {
+  height: 50px;
+  width: 100px !important;
+}
+.bars {
+  width: 30px;
+  /* height: 50px; */
+}
+.hide {
+  display: none;
+}
+
+.routes {
+  /* margin-top: 15px; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.menu:hover{
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.check{
+  display: none;
+  /* display: flex; */
+  background-color: #2a3042;
+  position: absolute;
+  margin-left: 35px;
+}
+.lin {
+  display: flex;
+  color: white;
+  width: 100%;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.lin:hover .link_text{
+  color: white;
+  /* background: rgb(45, 51, 89); */
+  /* transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+}
+
+.menu:hover .check{
+  display: flex;
+ 
+}
+.icon{
+  display: inline-flex;
+}
+.link_text1{
+  color: white;
+  /* padding-top: 4px; */
+  font-size: 18px;
+}
+
+.arrow{
+  margin-top: 3px;
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  position: relative;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  /* position: relative; */
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
