@@ -14,7 +14,7 @@ export const COLUMNS = [
                     display:"inline-flex",
                     flexDirection:"column"
                  }}>
-                   <span>{row.original.name}</span>
+                   <h4>{row.original.name}</h4>
                    <span>{row.original.email}</span>
                  </div>
             </div>

@@ -9,6 +9,7 @@
 .main-container {
   display: flex;
   /* position: relative; */
+  /* border: 2px solid green; */
 }
 main {
   padding: 10px;
@@ -24,7 +25,8 @@ main {
 .sidebar {
   background: #2a3042;
   color: white;
-  height: 120vh;
+  height: 100%;
+  /* border: 2px solid red; */
   /* display: flex; */
   /* flex-direction: column; */
   /* overflow-y: auto;  */

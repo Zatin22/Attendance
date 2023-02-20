@@ -1,16 +1,16 @@
 import { NavLink } from "react-router-dom";
-//import { vms } from "../Sidebar/assetsnew";
 import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
-import { BiAnalyse, BiSearch } from "react-icons/bi";
 import { BiCog } from "react-icons/bi";
-// import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
-// import { BsCartCheck } from "react-icons/bs";
 import {GoOrganization} from "react-icons/go";
 import {BsFillCalendar2XFill,BsCalendarCheckFill} from "react-icons/bs";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
+//import { vms } from "../Sidebar/assetsnew";
+// import { MdMessage } from "react-icons/md";
+// import { BiAnalyse, BiSearch } from "react-icons/bi";
+// import { AiFillHeart, AiTwotoneFileExclamation } from "react-icons/ai";
+// import { BsCartCheck } from "react-icons/bs";
 // import { SOMETHING_WENT_WRONG} from '../Sidebar/utils/const'
 
 const routes = [
@@ -173,6 +173,7 @@ const SideBar = ({ children }) => {
   return (
     <>
       <div className="main-container">
+        <div className="side">
         <motion.div
           animate={{
             width: isOpen ? "200px" : "45px",
@@ -249,7 +250,7 @@ const SideBar = ({ children }) => {
             })}
           </section>
         </motion.div>
-
+        </div>
         <main className="main">{children}</main>
       </div>
     </>

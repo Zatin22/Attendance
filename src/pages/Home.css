@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body{
+  /* body{
     background-color: #f3f3f9;
-  }
+  } */
 
   .navbar{
     display: flex;
@@ -102,3 +102,7 @@
     background-color: #f3f3f9;
   }
 
+  .home{
+    /* border:  2px solid blue; */
+    height: 120vh;
+  }
