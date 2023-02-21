@@ -5,7 +5,6 @@ import MOCK_DATA from "./MOCK_DATA.json";
 import {COLUMNS} from "./Columns.jsx";
 import "./Employee.css";
 import { Checkbox } from './Checkbox.jsx';
-// import { GlobalFilter } from './GlobalFilter';
 
 const Employee = () =>{
   
@@ -33,20 +32,45 @@ const Employee = () =>{
   const { globalFilter, pageIndex, pageSize } = state;
 
   return (
-    <div className='employee'>
+    <div className='employee'
+       style={{  backgroundcolor: "white"}}
+    >
       {/* <Navbar/> */}
-        
+        {/* <h1 className='h'>heee</h1> */}
          {/* <h1 className='y'>hhhhhh</h1> */}
 
          <GlobalFilter  filter={globalFilter} setFilter={setGlobalFilter}/>
 
-      <table {...getTableProps()}>
+      <table {...getTableProps()}
+         style={{
+          
+            fontfamily: "Arial, Helvetica, sans-serif",
+            bordercollapse: "collapse",
+            width: "100%",
+            margintop: "10px",
+            backgroundColor:"#",
+            /* border: none; */
+          
+         }}
+      >
         <thead>
           {headerGroups.map((headerGroups) => (
-            <tr {...headerGroups.getHeaderGroupProps()}>
+            <tr 
+              style={{
+                border: "1px solid #ddd",
+              }}
+            {...headerGroups.getHeaderGroupProps()}>
               {
                  headerGroups.headers.map((column) =>(
-              <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+              <th style={{ 
+                backgroundcolor: "red", padding: "10px",
+                paddingtop: "12px",
+                paddingbottom: "12px",
+                textalign: "center",
+                color: "black",
+
+              }}
+              {...column.getHeaderProps(column.getSortByToggleProps())}>
                 {column.render('Header')}
                 <span>
                   {column.isSorted ? (column.isSortedDesc ? '🔽': '🔼'):''}
@@ -61,10 +85,18 @@ const Employee = () =>{
           {page.map((row) =>{
             prepareRow(row)
             return(
-              <tr {...row.getRowProps()}>
+              <tr
+              style={{
+                border: "1px solid #ddd",
+              }}
+              {...row.getRowProps()}>
                    {row.cells.map((cell) =>{
 
-                     return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                     return <td
+                        style={{
+                          textalign: "center",
+                        }}
+                     {...cell.getCellProps()}>{cell.render('Cell')}</td>
                    })
 
                    }
@@ -73,7 +105,16 @@ const Employee = () =>{
           })}
         </tbody>
       </table>
-      <div className='pages'>
+      <div className='pages'
+        style={{
+          margintop: "15px",
+          display: "flex",
+          alignitems: "center",
+          justifycontent: "center",
+          backgroundcolor: "#ddd",
+          padding: "10px",
+        }}
+      >
       <span>
         Page{' '}
           <strong>
@@ -105,8 +146,26 @@ const Employee = () =>{
                }
             </select>
        {/* <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>{'<<'}</button> */}
-       <button className='btnblue' onClick={() => previousPage()} disabled={!canPreviousPage}>PreviousPage</button>
-       <button className='btnblue' onClick={() => nextPage()} disabled={!canNextPage}>Next</button>
+       <button
+           style={{
+              border: "none",
+              backgroundcolor: "#556ee6",
+              margin: "2px",
+              fontsize: "15px",
+              borderradius: "10px",
+              padding: "10px",
+           }}
+       className='btnblue' onClick={() => previousPage()} disabled={!canPreviousPage}>PreviousPage</button>
+       <button
+           style={{
+            border: "none",
+            backgroundcolor: "#556ee6",
+            margin: "2px",
+            fontsize: "15px",
+            borderradius: "10px",
+            padding: "10px",
+           }}
+       className='btnblue' onClick={() => nextPage()} disabled={!canNextPage}>Next</button>
        {/* <button onClick={() => gotoPage(pageCount-1)} disabled={!canNextPage}>{'>>'}</button> */}
        </div>
     </div>

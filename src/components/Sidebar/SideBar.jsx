@@ -25,7 +25,7 @@ const routes = [
     icon: <GoOrganization size="1.5em"/>,
     subRoutes: [
       {
-        path: "/organisation/Employee",
+        path: "/organisation/employee/Employee",
         name: "Employee ",
         icon: <FaUser />,
       },
@@ -35,7 +35,7 @@ const routes = [
         icon: <FaLock />,
       },
       {
-        path: "/organisation/Department",
+        path: "/organisation/department/Department",
         name: "Department",
         icon: <FaMoneyBill />,
       },

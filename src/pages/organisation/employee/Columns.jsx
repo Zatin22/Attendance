@@ -1,8 +1,5 @@
 import { format } from 'date-fns';
-const row=[{
-    photo:"https://robohash.org/utquiaconsequatur.png?size=50x50&set=set1",
-    name:"Garey"}
-]
+
 export const COLUMNS = [
     {
         Header: 'Basic information',

@@ -1,41 +1,38 @@
 .employee{
   background-color: white;
 }
-table {
+.employee table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
-    /* border: none; */
+    
   }
   
-  table td, table th {
+  .employee td, .employee th {
     padding: 8px;
   }
-  table th{
+  .employee th{
     background-color: #556ee6;
   }
-  table tr{
+  .employee tr{
     border: 1px solid #ddd;
-    /* text-align: center; */
+   
   }
-  table td{
+  .employee td{
     text-align: center;
   }
   
-  /* table tr:nth-child(even){background-color: #f2f2f2;} */
+
   
-  table tr:hover {background-color: #ddd;}
+  .employee tr:hover {background-color: #ddd;}
   
-  table th {
+  .employee th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    /* background-color: #04AA6D; */
+    
     color: black;
-  }
-  .employee{
-    /* border: 2px solid pink; */
   }
 
   .btnblue{
@@ -46,7 +43,7 @@ table {
      border-radius: 10px;
      padding: 10px;
   }
-  .btnadd{
+  .btnad{
      border: none;
      background-color: #556ee6;
      margin: 2px;
@@ -54,7 +51,7 @@ table {
      border-radius: 10px;
      padding: 10px;
   }
-  .btnadd:hover{
+  .btnad:hover{
     background-color: #4458b8;
     color: white;
   }
@@ -63,11 +60,14 @@ table {
     color: white;
   }
   .pages{
-    /* border: 2px solid red; */
+  
     margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ddd;
     padding: 10px;
+  }
+  .h{
+    color: red;
   }

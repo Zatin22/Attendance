@@ -26,7 +26,18 @@ export const GlobalFilter =({ filter, setFilter}) => {
                 width:"50%",
                 // border:"2px solid blue"
                 }}>
-                <button className="btnadd" style={{float:"right"}}>Add</button>
+                <button 
+                  style={{
+                    float:"right",
+                    border: "none",
+                  
+                    // backgroundcolor: "red",
+                    margin: "2px",
+                    fontsize: "15px",
+                    borderradius: "10px",
+                    padding: "10px",
+                  }}
+                className="btnad" >Add</button>
                 {/* <button style={{float:"right"}}>ad</button> */}
               </div>
             

@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 // import Selfservices from "./pages/Users";
 import Organisation from "./pages/Organisation";
-import Employee from "./pages/organisation/Employee";
+import Employee from "./pages/organisation/employee/Employee";
 import Location from "./pages/organisation/Location";
-import Department from "./pages/organisation/Department";
+import Department from "./pages/organisation/department/Department";
 import Designation from "./pages/organisation/Designation";
 import Birthdayfolks from "./pages/organisation/Birthdayfolks";
 import Newhires from "./pages/organisation/Newhires";
@@ -38,9 +38,9 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/users" element={<Selfservices />} /> */}
           <Route path="/organisation" element={<Organisation />} />
-          <Route path="/organisation/Employee" element={<Employee />} />
+          <Route path="/organisation/employee/Employee" element={<Employee />} />
           <Route path="/organisation/Location" element={<Location/>} />
-          <Route path="/organisation/Department" element={<Department/>} />
+          <Route path="/organisation/department/Department" element={<Department/>} />
           <Route path="/organisation/Designation" element={<Designation/>} />
           <Route path="/organisation/Birthdayfolks" element={<Birthdayfolks/>} />
           <Route path="/organisation/Newhires" element={<Newhires/>} />
