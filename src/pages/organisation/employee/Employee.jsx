@@ -33,7 +33,7 @@ const Employee = () =>{
 
   return (
     <div className='employee'
-       style={{  backgroundcolor: "white"}}
+       style={{  backgroundcolor: "white" }}
     >
       {/* <Navbar/> */}
         {/* <h1 className='h'>heee</h1> */}

@@ -39,36 +39,14 @@ const Department = () =>{
 
          <GlobalFilter_Department  filter={globalFilter} setFilter={setGlobalFilter}/>
 
-      <table className='departmenttable' {...getTableProps()}
-        //  style={{
-          
-        //     fontfamily: "Arial, Helvetica, sans-serif",
-        //     bordercollapse: "collapse",
-        //     width: "100%",
-        //     margintop: "10px",
-        //     backgroundColor:"#",
-        //     /* border: none; */
-          
-        //  }}
-      >
+      <table className='departmenttable' {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroups) => (
             <tr 
-              // style={{
-              //   border: "1px solid #ddd",
-              // }}
             {...headerGroups.getHeaderGroupProps()}>
               {
                  headerGroups.headers.map((column) =>(
               <th
-              //  style={{ 
-              //   backgroundcolor: "#556ee6", padding: "8px",
-              //   paddingtop: "12px",
-              //   paddingbottom: "12px",
-              //   textalign: "center",
-              //   color: "black",
-
-              // }}
               {...column.getHeaderProps(column.getSortByToggleProps())}>
                 {column.render('Header')}
                 <span>
@@ -85,9 +63,7 @@ const Department = () =>{
             prepareRow(row)
             return(
               <tr
-              // style={{
-              //   border: "1px solid #ddd",
-              // }}
+              
               {...row.getRowProps()}>
                    {row.cells.map((cell) =>{
 
@@ -105,14 +81,6 @@ const Department = () =>{
         </tbody>
       </table>
       <div className='pages'
-        // style={{
-        //   margintop: "15px",
-        //   display: "flex",
-        //   alignitems: "center",
-        //   justifycontent: "center",
-        //   backgroundcolor: "#ddd",
-        //   padding: "10px",
-        // }}
       >
       <span>
         Page{' '}
