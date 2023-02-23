@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
-import {GlobalFilter_Department} from "./GlobalFilter_Department";
+import {GlobalFilter_Location} from "./GlobalFilter_Location";
 import { useTable, useSortBy, useGlobalFilter, usePagination, useRowSelect } from "react-table";
-import MOCK_DATA from "./d.json";
-import {COLUMNS} from "./Columns_Department";
-import "./Department.css";
+import MOCK_DATA from "./location_mock.json";
+import {COLUMNS} from "./Columns_Location";
+import "./Location.css";
 import { Checkbox } from './Checkbox';
 
 const Department = () =>{
@@ -32,11 +32,11 @@ const Department = () =>{
   const { globalFilter, pageIndex, pageSize } = state;
 
   return (
-    <div className='department'
+    <div className='location'
        style={{  backgroundcolor: "white"}}
     >
         
-         <GlobalFilter_Department  filter={globalFilter} setFilter={setGlobalFilter}/>
+         <GlobalFilter_Location  filter={globalFilter} setFilter={setGlobalFilter}/>
 
       <table className='departmenttable' {...getTableProps()}>
         <thead>

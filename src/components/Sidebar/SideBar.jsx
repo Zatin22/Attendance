@@ -30,7 +30,7 @@ const routes = [
         icon: <FaUser />,
       },
       {
-        path: "/organisation/Location",
+        path: "/organisation/location/Location",
         name: "Location",
         icon: <FaLock />,
       },

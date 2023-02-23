@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 // import Selfservices from "./pages/Users";
 import Organisation from "./pages/Organisation";
 import Employee from "./pages/organisation/employee/Employee";
-import Location from "./pages/organisation/Location";
+import Location from "./pages/organisation/location/Location";
 import Department from "./pages/organisation/department/Department";
 import Designation from "./pages/organisation/Designation";
 import Birthdayfolks from "./pages/organisation/Birthdayfolks";
@@ -39,7 +39,7 @@ function App() {
           {/* <Route path="/users" element={<Selfservices />} /> */}
           <Route path="/organisation" element={<Organisation />} />
           <Route path="/organisation/employee/Employee" element={<Employee />} />
-          <Route path="/organisation/Location" element={<Location/>} />
+          <Route path="/organisation/location/Location" element={<Location/>} />
           <Route path="/organisation/department/Department" element={<Department/>} />
           <Route path="/organisation/Designation" element={<Designation/>} />
           <Route path="/organisation/Birthdayfolks" element={<Birthdayfolks/>} />

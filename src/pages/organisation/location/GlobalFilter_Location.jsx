@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import { Field, Formik, Form } from 'formik';
 // import React, { useState } from "react";
 
-export const GlobalFilter_Department =({ filter, setFilter}) => {
+export const GlobalFilter_Location =({ filter, setFilter}) => {
 
   const [modal, setModal] = useState(false);
 

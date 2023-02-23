@@ -71,18 +71,18 @@ main {
 }
 .link:hover {
   /* border-right: 4px solid white; */
-  background: rgb(45, 51, 89);
+  background: #556ee6;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .menu:hover{
   /* border-right: 4px solid white; */
-  background: rgb(45, 51, 89);
+  background: #556ee6;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .check{
   display: none;
   /* display: flex; */
-  background-color: #222222;
+  background-color: #000080;
   position: absolute;
   margin-left: 35px;
 }

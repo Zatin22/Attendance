@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 export const COLUMNS = [
     {
         Header: 'Basic information',
-        accessor: 'name',
+        accessor: (row) => {return ([`${row.name}`, `${row.email}`])} ,
         Cell: ({ row }) => (
             <div>
                 {/* <span>{row.original.photo}</span> */}
