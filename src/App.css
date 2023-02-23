@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: #222222; */
 }
 .main{
   flex: 1;
@@ -23,7 +24,9 @@ main {
 
 /* Sidebar */
 .sidebar {
-  background: #2a3042;
+  /* background: #2a3042; */
+  background: #000080;
+  /* background: #0; */
   color: white;
   height: 100%;
   /* border: 2px solid red; */
@@ -62,24 +65,24 @@ main {
   display: flex;
   color: white;
   gap: 10px;
-  padding: 5px 10px;
+  padding: 18px 10px;
   border-right: 4px solid transparent;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .link:hover {
-  border-right: 4px solid white;
+  /* border-right: 4px solid white; */
   background: rgb(45, 51, 89);
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .menu:hover{
-  border-right: 4px solid white;
+  /* border-right: 4px solid white; */
   background: rgb(45, 51, 89);
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 .check{
   display: none;
   /* display: flex; */
-  background-color: #2a3042;
+  background-color: #222222;
   position: absolute;
   margin-left: 35px;
 }
@@ -103,21 +106,29 @@ main {
  
 }
 .icon{
-  display: inline-flex;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .link_text1{
-  color: white;
-  /* padding-top: 4px; */
-  font-size: 18px;
+    color: white;
+    /* padding-top: 4px; */
+    display: inline-flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
 }
 
 .arrow{
   margin-top: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
-.active {
+/* .active {
   border-right: 4px solid white;
   background: rgb(45, 51, 89);
-}
+} */
 .link_text {
   white-space: nowrap;
   font-size: 15px;
@@ -127,7 +138,7 @@ main {
   display: flex;
   color: white;
   position: relative;
-  padding: 5px 10px;
+  padding: 18px 10px;
   border-right: 4px solid transparent;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   justify-content: space-between;
@@ -136,6 +147,8 @@ main {
   display: flex;
   /* position: relative; */
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .menu_container {
   display: flex;
@@ -143,5 +156,5 @@ main {
 }
 .menu_container .link {
   padding-left: 20px;
-  border-bottom: #fff 0.5px solid;
+  /* border-bottom: #fff 0.5px solid; */
 }

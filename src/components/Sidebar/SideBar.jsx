@@ -187,7 +187,7 @@ const SideBar = ({ children }) => {
           className={`sidebar`}
         >
           <div className="top_section">
-            <AnimatePresence>
+            {/* <AnimatePresence> */}
               {isOpen && (
                 
                 <motion.img src={require('../Sidebar/assetsnew/vms.png')}
@@ -199,7 +199,7 @@ const SideBar = ({ children }) => {
                   // width="50px" height="40px"
                 alt="" />
               )}
-            </AnimatePresence>
+            {/* </AnimatePresence> */}
 
             <div className="bars">
               <FaBars onClick={toggle} />
@@ -232,7 +232,7 @@ const SideBar = ({ children }) => {
                   activeClassName="active"
                 >
                   <div className="icon">{route.icon}</div>
-                  <AnimatePresence>
+                  {/* <AnimatePresence> */}
                     {isOpen && (
                       <motion.div
                         variants={showAnimation}
@@ -244,7 +244,7 @@ const SideBar = ({ children }) => {
                         {route.name}
                       </motion.div>
                     )}
-                  </AnimatePresence>
+                  {/* </AnimatePresence> */}
                 </NavLink>
               );
             })}

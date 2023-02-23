@@ -54,7 +54,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, iisOpen, setIsOpen }) => {
         <div className="menu_item">
 
           <div className="icon">{route.icon}</div>
-          <AnimatePresence>
+          {/* <AnimatePresence> */}
             {isOpen && (
               <motion.div
                 variants={showAnimation}
@@ -66,7 +66,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, iisOpen, setIsOpen }) => {
                 {route.name}
               </motion.div>
             )}
-          </AnimatePresence>
+          {/* </AnimatePresence> */}
         </div>
         {isOpen && (
           <motion.div className="arrow" onClick={toggleMenu}
@@ -98,7 +98,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, iisOpen, setIsOpen }) => {
       </div>
 
 
-      <AnimatePresence>
+      {/* <AnimatePresence> */}
         {isMenuOpen && (
           <motion.div
             variants={menuAnimation}
@@ -117,7 +117,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, iisOpen, setIsOpen }) => {
             ))}
           </motion.div>
         )}
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </>
   );
 };
